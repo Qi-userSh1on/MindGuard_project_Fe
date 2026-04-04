@@ -11,7 +11,7 @@ function App() {
       <Route path="/" element={<Dashboard />} />
       <Route path="/history" element={<History />} />
       {/* 2. Tambahkan route untuk halaman Daily Checkin */}
-      <Route path="/daily-checkin" element={<DailyCheckinPage />} />
+      <Route path="/dailycheckin" element={<DailyCheckinPage />} />
     </Routes>
   );
 }

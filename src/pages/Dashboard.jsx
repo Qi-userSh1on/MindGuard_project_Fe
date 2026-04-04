@@ -3,6 +3,7 @@ import DailyCheckIn from "../components/DailyCheckIn";
 import SummaryCard from "../components/SummaryCard";
 import FeatureCard from "../components/FeatureCard";
 import StreakCard from "../components/StreakCard";
+import StatusCard from "../components/StatusCard";
 import MyCustomIcon from "../assets/icon-mindguard.png";
 
 export default function Dashboard() {
@@ -13,13 +14,17 @@ export default function Dashboard() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
         {/* Banner Selamat Datang */}
         <div className="bg-gradient-to-r from-cyan-400 to-blue-500 text-white p-8 lg:p-12 rounded-3xl mb-8 shadow-2xl">
-          <h1 className="text-3xl lg:text-4xl font-bold mb-2">Halo, Febri!</h1>
+          <h1 className="text-3xl lg:text-4xl font-bold mb-2">
+            Halo, Selamat Datang!
+          </h1>
           <p className="text-lg opacity-95">
             Cegah burnout dengan hidup seimbang hari ini
           </p>
         </div>
-
-        <DailyCheckIn />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <StatusCard />
+          <DailyCheckIn />
+        </div>
 
         <h2 className="!text-2xl lg:text-3xl font-bold mt-12 mb-6">
           Ringkasan Hari Ini
